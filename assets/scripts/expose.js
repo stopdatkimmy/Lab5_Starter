@@ -9,16 +9,15 @@ function init() {
   const volume_control = document.getElementById("volume-controls");
   const volume = document.getElementById("volume");
   const audio = document.querySelector("audio");
-  const button = document.querySelector("button");
+  const buttons = document.querySelector("button");
   const imgs = document.querySelector("img");
   const volimgs = volume_control.querySelector("img");
   
   hornchange.addEventListener('change',function() {
     changehorn(hornchange,audio,imgs);
     });
-  button.addEventListener('click', () => {
+  buttons.addEventListener('click', () => {
     audio.play();
-    const buttons = button.value;
     if (hornchange.value ==  'party-horn'){
       const jsconfetti = new JSConfetti();
       jsconfetti.addConfetti();
