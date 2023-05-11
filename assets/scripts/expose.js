@@ -52,7 +52,7 @@ function changeinvolume(volume,audio,volimgs){
 
   if (volumes == '0') {
     volimgs.src = "assets/icons/volume-level-0.svg";
-    volimgs.alt = 'Volume level 0';
+   
   }
   else if (volumes < '33') {
     volimgs.src = "assets/icons/volume-level-1.svg";
