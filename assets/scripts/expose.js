@@ -15,17 +15,17 @@ function init() {
   
   hornchange.addEventListener('change',() => {
     if (hornchange.value === "air-horn"){
-      audio.src = "/assets/audio/air-horn.mp3";
-      imgs.src = "/assets/images/air-horn.svg";
+      audio.src = "./assets/audio/air-horn.mp3";
+      imgs.src = "./assets/images/air-horn.svg";
     }
     else if (hornchange.value === "car-horn"){
      
-      imgs.src = "/assets/images/car-horn.svg";
-      audio.src = "/assets/audio/car-horn.mp3";
+      imgs.src = "./assets/images/car-horn.svg";
+      audio.src = "./assets/audio/car-horn.mp3";
     }
     else if (hornchange.value === "party-horn"){
-      imgs.src = "/assets/images/party-horn.svg";
-      audio.src = "/assets/audio/party-horn.mp3";
+      imgs.src = "./assets/images/party-horn.svg";
+      audio.src = "./assets/audio/party-horn.mp3";
     };
 
     });
